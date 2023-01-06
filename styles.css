@@ -1,0 +1,28 @@
+body {
+    background-color : lightcoral;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+#navigation { 
+    height: 10vh;
+    background-color: cadetblue;
+    padding : 2rem ;
+    margin-bottom: 2rem;
+}
+
+
+#text-input {
+    width : 90%;
+    height: 20vh;
+    border-radius: 1rem;
+    border : none;
+}
+
+#trans-button {
+    padding : 1rem ;
+    margin: 1rem;
+}
