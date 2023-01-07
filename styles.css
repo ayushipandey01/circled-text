@@ -1,31 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 body {
     background-color : lightblue;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     color: black;
     text-align: center;
+    
 }
 
 #navigation { 
-    height: 10vh;
+    height: 5vh;
     background-color: lightsalmon;
-    padding : 2rem ;
+    padding : 2rem;
     margin-bottom: 2rem;
 }
 
 
 #text-input {
     width : 90%;
-    height: 20vh;
-    border-radius: 1rem;
+    height: 10vh;
+    border-radius: 0.5rem;
     border : none;
     margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #trans-button {
     padding : 1rem ;
     margin: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #output{
@@ -34,5 +44,21 @@ h1 {
     width: 90%;
     margin: 1rem;
     padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: none;
+}
 
+#footer-head {
+    text-align: center;
+    /* height: 10vh; */
+    background-color: lightsalmon;
+    padding: 1rem;
+}
+
+#footer-text {
+    text-align: center;
+    height: 10vh;
+    padding-bottom: 1rem;
+    background-color: lightsalmon;
 }
