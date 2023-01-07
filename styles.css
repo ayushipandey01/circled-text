@@ -20,9 +20,19 @@ h1 {
     height: 20vh;
     border-radius: 1rem;
     border : none;
+    margin: 1rem;
 }
 
 #trans-button {
     padding : 1rem ;
     margin: 1rem;
+}
+
+#output{
+    border: 1px solid black;
+    height: 10vh;
+    width: 90%;
+    margin: 1rem;
+    padding: 1rem;
+
 }
