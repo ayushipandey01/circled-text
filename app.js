@@ -1,21 +1,23 @@
+var translateButton = document.querySelector("#trans-button");
+
+// console.log(translateButton , "clicked");
+
+
 var textInput = document.querySelector("#text-input");
 
 // console.log(textInput);
 
-var translateButton = document.querySelector("#trans-button");
-
-// console.log(translateButton , "clicked");
 
 var textOutput = document.querySelector("#output");
 
 // textOutput.innerText = "Ayushi Pandey";
 // console.log(textOutput);
 
-var serverURL = "https://api.funtranslations.com/translate/minion.json";
+var serverURL = "https://api.funtranslations.com/translate/yoda.json";
 
 
 function getServerURL(text){
-    return ServerURL + "?" + "text=" + text 
+    return serverURL + "?" + "text=" + text 
 }
 
 function errorHandler(error){
@@ -33,7 +35,7 @@ function clickEventHandler(){
         var translatedText = json.contents.translated;
         textOutput.innerText = translatedText;
     })
-    .catch(errorHandler)
+    .catch(errorHandler);
 }
 
 translateButton.addEventListener("click" , clickEventHandler)
