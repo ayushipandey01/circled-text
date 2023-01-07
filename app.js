@@ -11,11 +11,11 @@ var textOutput = document.querySelector("#output");
 // textOutput.innerText = "Ayushi Pandey";
 // console.log(textOutput);
 
-var ServerURL = "https://api.funtranslations.com/translate/yoda.json" ;
+var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 
 function getServerURL(text){
-    return ServerURL + "?" + "text=" + text ;
+    return ServerURL + "?" + "text=" + text 
 }
 
 function errorHandler(error){
@@ -24,15 +24,16 @@ function errorHandler(error){
 }
 
 function clickEventHandler(){
-    var userInput = textInput.value;
+    var userInput = textInput.value
 
     fetch(getServerURL(userInput))
+    // console.log(getServerURL(userInput))
     .then(response => response.json())
     .then(json => {
-        var translatedText = json.content.translated;
+        var translatedText = json.contents.translated;
         textOutput.innerText = translatedText;
     })
     .catch(errorHandler)
 }
 
-translateButton.addEventListener("click" , clickEventHandler);
+translateButton.addEventListener("click" , clickEventHandler)
